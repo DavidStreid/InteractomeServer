@@ -10,3 +10,4 @@ target/classes/**
 target/interactome/**/*.jar
 **/*.properties
 **/*.lst
+/target/

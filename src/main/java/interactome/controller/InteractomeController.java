@@ -7,18 +7,17 @@ import java.util.List;
 
 import org.json.JSONException;
 import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
 import main.java.interactome.service.InteractomeService;
-
 import main.java.interactome.domain.Link;
 import main.java.interactome.domain.LinkRequest;
 import main.java.interactome.domain.Node;
 
-@RestController
+@Controller
 public class InteractomeController {
 	// NOTE - AutoWiring is for when you have another project (WITH A POM) that is a dependency
 	private InteractomeService interactomeService = new InteractomeService();
