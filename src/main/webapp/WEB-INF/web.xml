@@ -12,6 +12,17 @@
 	</servlet>  
 	<servlet-mapping>  
 	    <servlet-name>Interactome</servlet-name>  
-	    <url-pattern>/getLinks</url-pattern>  
+	    <url-pattern>/*</url-pattern>  
 	</servlet-mapping>  
+	<context-param>
+	   <param-name>contextConfigLocation</param-name>
+	   <param-value>
+	    WEB-INF/Interactome-servlet.xml
+	   </param-value>
+ 	</context-param>
+ 	<listener>
+   		<listener-class>
+    		org.springframework.web.context.ContextLoaderListener
+    	</listener-class>
+ 	</listener>
 </web-app>  

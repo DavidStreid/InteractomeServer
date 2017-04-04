@@ -1,4 +1,4 @@
-package main.java.interactome.service;
+package interactome.service;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -6,9 +6,9 @@ import java.util.List;
 
 import org.json.JSONException;
 
-import main.java.interactome.domain.Link;
-import main.java.interactome.domain.Node;
-import main.java.interactome.DAO.InteractomeDAO;;
+import interactome.domain.Link;
+import interactome.domain.Node;
+import interactome.DAO.InteractomeDAO;;
 
 
 public class InteractomeService{

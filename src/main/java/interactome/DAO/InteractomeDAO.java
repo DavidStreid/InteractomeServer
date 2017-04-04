@@ -1,4 +1,4 @@
-package main.java.interactome.DAO;
+package interactome.DAO;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,8 +16,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import main.java.interactome.domain.Link;
-import main.java.interactome.domain.Node;
+import interactome.domain.Link;
+import interactome.domain.Node;
 
 public class InteractomeDAO{
 	/*

@@ -1,4 +1,4 @@
-package main.java.interactome.domain;
+package interactome.domain;
 
 import java.util.ArrayList;
 import java.util.List;

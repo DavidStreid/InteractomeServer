@@ -1,4 +1,4 @@
-package main.java.interactome.domain;
+package interactome.domain;
 
 //LINK: {"source": "5", "target": "3"}
 

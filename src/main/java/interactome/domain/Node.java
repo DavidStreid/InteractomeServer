@@ -1,4 +1,4 @@
-package main.java.interactome.domain;
+package interactome.domain;
 
 //NODE: {"id": "1", "label": "MDFI"}
 
