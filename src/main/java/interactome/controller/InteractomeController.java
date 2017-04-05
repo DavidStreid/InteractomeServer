@@ -23,13 +23,7 @@ import interactome.domain.Node;
 public class InteractomeController {
 	// NOTE - AutoWiring is for when you have another project (WITH A POM) that is a dependency
 	private InteractomeService interactomeService = new InteractomeService();
-	
-	@RequestMapping(method = RequestMethod.POST)
-	public void getLinks2(@RequestBody LinkRequest linkRequest) {
 		
-	}
-	
-	
 	@RequestMapping(method = RequestMethod.POST)
 	public @ResponseBody List<Link> getLinks(@RequestBody LinkRequest linkRequest) throws IOException {
 		List<Node> nodes = linkRequest.getNodes();
