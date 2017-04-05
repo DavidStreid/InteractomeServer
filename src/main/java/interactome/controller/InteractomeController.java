@@ -29,7 +29,6 @@ public class InteractomeController {
 		List<Node> nodes = linkRequest.getNodes();
 		List<Link> links = new ArrayList<Link>();
 
-		System.out.println("IN METHOD");
 		try {
 			links = interactomeService.getInteractomeData(nodes);
 		} catch(MalformedURLException e) {
