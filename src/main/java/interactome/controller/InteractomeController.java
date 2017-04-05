@@ -19,16 +19,23 @@ import interactome.domain.LinkRequest;
 import interactome.domain.Node;
 
 @Controller
-@RequestMapping("/getLinks")
+@RequestMapping(value="/getLinks")
 public class InteractomeController {
 	// NOTE - AutoWiring is for when you have another project (WITH A POM) that is a dependency
 	private InteractomeService interactomeService = new InteractomeService();
 	
-	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(method = RequestMethod.POST)
+	public void getLinks2(@RequestBody LinkRequest linkRequest) {
+		
+	}
+	
+	
+	@RequestMapping(method = RequestMethod.POST)
 	public @ResponseBody List<Link> getLinks(@RequestBody LinkRequest linkRequest) throws IOException {
 		List<Node> nodes = linkRequest.getNodes();
 		List<Link> links = new ArrayList<Link>();
-		
+
+		System.out.println("IN METHOD");
 		try {
 			links = interactomeService.getInteractomeData(nodes);
 		} catch(MalformedURLException e) {
