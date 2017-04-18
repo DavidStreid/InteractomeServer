@@ -37,7 +37,7 @@
 
     <build>
 		<plugins>
-            <plugin>
+			<plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
@@ -49,6 +49,7 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+			<!-- Needed for building the war -->
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.4</version>
