@@ -6,18 +6,18 @@
     http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">  
     <display-name>Interactome</display-name>
 	 <servlet>  
-	    <servlet-name>Interactome</servlet-name>  
+	    <servlet-name>interactome</servlet-name>  
 	    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>  
 	    <load-on-startup>1</load-on-startup>  
 	</servlet>  
 	<servlet-mapping>  
-	    <servlet-name>Interactome</servlet-name>  
+	    <servlet-name>interactome</servlet-name>  
 	    <url-pattern>/getLinks</url-pattern>  
 	</servlet-mapping>  
 	<context-param>
 	   <param-name>contextConfigLocation</param-name>
 	   <param-value>
-	    WEB-INF/Interactome-servlet.xml
+	    /WEB-INF/interactome-servlet.xml
 	   </param-value>
  	</context-param>
  	<listener>

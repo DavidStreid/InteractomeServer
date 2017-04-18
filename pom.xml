@@ -12,6 +12,7 @@
     
     <properties>
         <java.version>1.8</java.version>
+        <basedir>/</basedir>
     </properties>
 
     <dependencies>
@@ -36,6 +37,7 @@
     </dependencies>
 
     <build>
+    	<sourceDirectory>${basedir}/src</sourceDirectory>
 		<plugins>
 			<plugin>
                 <groupId>org.springframework.boot</groupId>
