@@ -1,7 +1,7 @@
 # build project
 mvn clean install
 # Copy servlet .xmls to WEB-INF for .war packaging
-cp src/main/webapp/WEB-INF/*.xml /Users/Bike_Thoughts/code/InteractomeProject/target/Interactome/WEB-INF 
+cp src/WEB-INF/*.xml /Users/Bike_Thoughts/code/InteractomeProject/target/Interactome/WEB-INF 
 rm target/Interactome.war
 cd target
 # Package .war
