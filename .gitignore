@@ -1,4 +1,4 @@
-actualBuild.sh
+**/*.war
 
 .metadata/*
 .settings/*
