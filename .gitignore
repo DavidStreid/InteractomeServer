@@ -1,3 +1,5 @@
+actualBuild.sh
+
 .metadata/*
 .settings/*
 .classpath
