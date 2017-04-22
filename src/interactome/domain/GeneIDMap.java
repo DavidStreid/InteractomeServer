@@ -1,9 +1,14 @@
-public class GeneIDMap
-{
-    private static final Map<String, String> idGeneMap = createMap();
-    private static Map<String, String> createMap()
+package interactome.geneIdMap;
+
+import java.util.Map;
+import java.util.HashMap;
+
+public class GeneIDMap {
+    private static final Map<String, Integer> idGeneMap = createMap();
+    
+    private static Map<String, Integer> createMap()
     {
-        Map<String,String> myMap = new HashMap<String,String>();
+        Map<String,Integer> myMap = new HashMap<String,Integer>();
         myMap.put("NTNG2", 84628);
         myMap.put("RPS26", 90121);
         myMap.put("LASP1", 3927);
